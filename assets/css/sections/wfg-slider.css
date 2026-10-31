@@ -171,6 +171,12 @@ strapline{
   [id$='pager'].navbtns button.active,  .scroller .navbtns button:hover{
     background: #000;
   }
+  @media (width < 450px) {
+  .hzd-arrow{display:none;}
+  .scroller{
+    overflow-x: auto;
+  }
+}
   @media (max-width: 768px) {
    [id$='pager'].navbtns {
       display: none;
