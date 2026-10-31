@@ -15,8 +15,46 @@ sections:
     arrowhovercolor: gold
     arrowposition: sides
     scrollerimages:
-      - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_center,f_auto/as_is
-        scrollerimagealt: Ahoy There Maties
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img150_800x578.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img149_800x549.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_south/img148_413x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img147_800x554.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_center/img144_413x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img143_416x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img142_800x569.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img139_414x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img134_800x552.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img125_800x562.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img029_800x555.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img0.123_800x544.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img.187_800x558.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img.30.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img294.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img262_800x563.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img153_800x551.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img192_408x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/img151_416x600.jpg
+          scrollerimagealt:
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/piwacket.jpg
+          scrollerimagealt:
     arrowsposition: sides
     visibleslides: 1
     subtitle: ""
