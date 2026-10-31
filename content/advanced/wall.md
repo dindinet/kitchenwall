@@ -113,7 +113,7 @@ sections:
     arrowsposition: sides
     visibleslides: 1
     subtitle: ""
-    title: "Places"    
+    title: "Faces"    
     arrowcolor: whitesmoke
     type: SliderSection
     arrowsinout: in
@@ -125,13 +125,51 @@ sections:
     arrowhovercolor: gold
     arrowposition: sides
     scrollerimages:
-      - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_006_757x600.jpg
-        scrollerimagealt: We're not goind to make it!
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_057_800x578.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_center,f_auto/as_is
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_059_800x559.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_058_782x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_056_800x467.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_055_800x577.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_053_800x569.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_051_800x565.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_049_800x526.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_028_800x597.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_027_767x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_025_780x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_024_478x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_009_473x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_008_800x489.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_006_757x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_007_775x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_002_616x600.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_001_800x342.jpg
+            scrollerimagealt: 
+          - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_003_631x600.jpg
+            scrollerimagealt: 
     arrowsposition: sides
     visibleslides: 1
     arrowcolor: whitesmoke
     subtitle: ""
-    title: "Faces"
+    title: "Places"
     type: SliderSection
     arrowsinout: in
   - arrowinout: in
@@ -142,8 +180,48 @@ sections:
     arrowhovercolor: gold
     arrowposition: sides
     scrollerimages:
-      - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_072_450x600.jpg
-        scrollerimagealt: Tim, is that a Jazz cigarette?
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1600,h_900,c_auto,g_face/ThunderbirdsNewGen
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_079_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_078_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_077_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_076_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_075_450x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_074_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_073_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_071_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_069_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/DSC_0024.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_070_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_068_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_072_450x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_067_800x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_066_800x575.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_065_450x600.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/mikeyatmic_800x540.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/DSC_0196_800x536.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/DSC_0022.jpg
+          scrollerimagealt: 
+        - scrollerimage: https://res.cloudinary.com/machi/image/upload/c_auto,h_670,w_1200,f_auto/bow-tie-boys
+          scrollerimagealt: With a little assistance from AI.
     arrowsposition: sides
     visibleslides: 1
     subtitle: ""
