@@ -230,7 +230,7 @@ sections:
     type: SliderSection
     arrowsinout: in    
 seo:
-  title: Blog
+  title: The Kitchen Wall | Le mur de la cuisine | De keukenmuur | La parete della cucina | La pared de la cocina
   description: This is the blog page
   extra:
     - name: og:type

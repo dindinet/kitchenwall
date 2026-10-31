@@ -47,11 +47,7 @@ params:
         style: link
         new_window: true
     content: >-
-      &copy; Kitchenwall inc. All rights reserved. This Jamstack site was created with
-      <a href="https://www.websitesforgrowth.com/"
-      target="_blank" rel="noopener">websitesforgrowth</a>. Create yours <a
-      href="https://www.websitesforgrowth.com
-      target="_blank" rel="noopener">now</a>
+      &copy; Kitchenwall inc. All rights reserved. 
   domain: 'https://kitchenwall.dindi.net'
   imgcache: 'https://dindi.net/cdn-cgi/image/format=auto/'
 taxonomies:

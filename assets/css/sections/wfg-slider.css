@@ -61,7 +61,7 @@ strapline{
       grid-auto-columns: var(--imagewidthmed);
       grid-auto-flow: column;
       grid-gap: 0px;
-      overflow-x: auto;
+      overflow-x: hidden;
       /*scrollbar-color: #fff #fff; /* yellow #000;  #499980 */
       /*max-width: 100%; */
       /*margin: 4rem auto 1rem auto;*/
