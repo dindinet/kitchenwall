@@ -157,8 +157,8 @@
   --font-size-heading-xl: clamp(2rem, 1.6rem + 2vw, 2.5rem);            /* 32-40px */
   --font-size-heading-2xl: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);         /* 40-56px */
   --font-size-heading-3xl: clamp(3.5rem, 2.8rem + 3.5vw, 4.5rem);       /* 56-72px */
-  --font-size-heading-4xl: clamp(4.5rem, 3.5rem + 5vw, 6rem);           /* 72-96px */
-  --font-size-heading-5xl: clamp(6rem, 4.5rem + 7.5vw, 8rem);           /* 96-128px */
+  --font-size-heading-4xl: clamp(4.5rem, 3.5rem + 5vw, 6rem);           /* 72-96px */ 
+  --font-size-heading-5xl: clamp(2.5rem, 1.5rem + 5vw, 8rem);        /* 96-128px */
   --font-size-heading-6xl: clamp(8rem, 6rem + 10vw, 10rem);             /* 128-160px */
   
   /* Line Heights */
