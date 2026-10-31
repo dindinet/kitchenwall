@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: github
-  repo: dindinet/wfgbuilder
+  repo: dindinet/kitchenwall
   branch: main
   base_url: https://wfgmodular.pages.dev/ #url for Oauth app on Github Developer settings
   auth_endpoint: /api/auth
