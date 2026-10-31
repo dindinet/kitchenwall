@@ -38,11 +38,11 @@
               {{ if $.Page.IsHome }}
                 <style>{{ .Content | safeCSS }}</style>
               {{ else }}
-                <link rel="stylesheet" href="{{ replace .RelPermalink "css" $random }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+                <link rel="stylesheet" href="{{ replace .RelPermalink "css" $random }}?tap" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
               {{ end }}
             {{ end }}
           {{ else }}
-            <link rel="stylesheet" href="{{ .RelPermalink }}?{{ $random }}?pip">
+            <link rel="stylesheet" href="{{ .RelPermalink }}?{{ $random }}?sap">
           {{ end }}
         {{ end }}
 
