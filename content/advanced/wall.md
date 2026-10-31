@@ -5,10 +5,8 @@ url: "/"
 sections:
   - type: FullWidthHeadingSection
     subtitleposition: above
-    subtitle: A good read for all
+    subtitle: 
     title: Welcome to The Kitchen Wall
-    titlecolour: "#b62121"
-    subtitlecolour: "#8828c7"
   - arrowinout: in
     displaypager: true
     scrollby: 1

@@ -7,7 +7,7 @@ build:
 
 params:
   header:
-    has_nav: true
+    has_nav: false
     nav_links:
       - label: Features
         url: /features
@@ -26,7 +26,7 @@ params:
         label: Contact Us
     title: KItchenWall
   footer:
-    has_nav: true
+    has_nav: false
     nav_links:
       - label: Contact Us
         url: /contact
@@ -34,7 +34,7 @@ params:
       - label: Privacy and Terms
         url: /terms
         style: link
-    has_social: true
+    has_social: false
     social_links:
       - label: github
         url: 'https://github.com/'
