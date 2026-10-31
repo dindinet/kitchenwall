@@ -48,5 +48,19 @@
 </svg>
 </div>
 {{ if $section.displaypager }}
+<style>
+  .navbtns button{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+    .navbtns button.active{
+      background: black;
+    }
+</style>
 <div id="{{ $section.scrollername }}-pager" class="navbtns"></div>
 {{ end }} 
