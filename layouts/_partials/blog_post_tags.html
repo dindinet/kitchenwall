@@ -1,0 +1,4 @@
+{{ $tags := .tags }}
+{{ range $tag := $tags }}
+  <span class="post-tag">{{ $tag }}</span>
+{{ end }}

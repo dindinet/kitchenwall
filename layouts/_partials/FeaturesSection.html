@@ -1,0 +1,80 @@
+{{ $section := .section }}
+  {{ partial "responsive/section-bg" (dict 
+    "class" "section-container--xl"
+    "containerWidth" 100
+     "bgColor" "#f9fafb"
+  ) }}
+
+  {{ if $section.title }}
+  <div class="container container--wide text-center">
+    <h2 class="section-title">{{ $section.title }}</h2>
+  </div>
+  {{ end }}
+
+  <div class="container container--wide">
+
+  {{ range $feature := $section.features }} <!--1-->
+    <div class="grid grid-cols-auto-fit-sm grid-gap-xl items-center {{ if eq $feature.align "center" }} text-center{{ end }}{{ if eq $feature.align "right" }} text-right{{ end }}">
+
+  {{ if $feature.image }} <!-- 2-->
+    <div class="my-lg {{ if eq $feature.image_position "right" }} media-right{{ end }}">
+      
+      {{/* partial "responsive/pictures-cloudinary.html" 
+        (dict 
+         "src" $feature.image
+         "alt" $feature.image_alt
+         "loading" "lazy"
+         "class" "responsive-img"
+             "containerWidth" (dict 
+             "desktop" 50
+             "tablet" 50
+              )
+        ) 
+      */}}  
+      
+      
+            {{ partial "responsive/pictures-cloudinary.html" (dict
+         "src"           $feature.image
+         "alt"           $feature.image_alt
+         "loading"       "lazy"
+         "class"         "responsive-img"
+         "containerType" "wide"
+         "containerWidth" (dict
+           "xlarge"  50
+           "large"   50
+           "desktop" 50
+           "tablet"  50
+           "mobile"  100
+         )
+        ) 
+      }}
+    </div>     
+  {{ end }} <!-- 2 END -->
+
+      <div class="section__body cell">
+        {{ if $feature.title }}
+          {{ if $section.title }}
+          <h3 class="section-title">{{ $feature.title }}</h3>
+          {{ else }}
+          <h2 class="section-title">{{ $feature.title }}</h2>
+          {{ end }}
+        {{ end }}
+        {{ if $feature.content }}
+        <div class="section__copy">
+          {{ partial "markdownify-block" $feature.content }}
+        </div>
+        {{ end }}
+        {{ if $feature.actions }}
+        <div class="section__actions btn-group">
+          {{ $include_dict := dict "actions" $feature.actions }}
+          {{ partial "section_actions.html" $include_dict }}
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+    {{ end }} <!--1 END -->
+
+  </div>
+
+</section>

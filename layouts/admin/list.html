@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Manager</title>
+  <link href="config.yaml" type="text/yaml" rel="cms-config-url">
+</head>
+<body>
+  
+  <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js"></script>
+ 
+  {{/* Generate the JS file from template, then build it  */}}
+  {{ $js := partial "decap-preview-template.js" . }}
+  {{ $processedJs := $js | resources.FromString "js/decap-preview-generated.js" }}
+  <script src="{{ $processedJs.RelPermalink }}"></script>
+  {{ with resources.Get "js/decap-hugo-shortcodes.js" }}
+       <script src="{{ .RelPermalink }}"></script>
+  {{ end }}
+</body>
+</html>

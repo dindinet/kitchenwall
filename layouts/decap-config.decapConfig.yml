@@ -1,0 +1,26 @@
+{{- $decap_config := site.Data.decap.config -}}
+{{- $new_sections := slice -}}
+{{- range site.Data.decap.sections -}}
+    {{- $new_sections = $new_sections | append . -}}
+{{- end -}}
+
+{{- $updated_collections := slice -}}
+{{- range $i, $collection := $decap_config.collections -}}
+    {{- if eq $collection.name "advanced" -}}
+        {{- $updated_fields := slice -}}
+        {{- range $field := $collection.fields -}}
+            {{- $updated_fields = $updated_fields | append $field -}}
+        {{- end -}}
+        {{- $title_field := dict "label" "Title" "name" "title" "widget" "string" -}}
+        {{- $layout_field := dict "label" "Layout" "name" "layout" "widget" "hidden" "default" "advanced" -}}
+        {{- $updated_fields = $updated_fields | append $title_field | append $layout_field -}}
+        {{- $sections_field := dict "label" "Page Sections" "name" "sections" "widget" "list" "default" (slice) "types" $new_sections -}}
+        {{- $updated_fields = $updated_fields | append $sections_field -}}
+        {{- $updated_collection := merge $collection (dict "fields" $updated_fields) -}}
+        {{- $updated_collections = $updated_collections | append $updated_collection -}}
+    {{- else -}}
+        {{- $updated_collections = $updated_collections | append $collection -}}
+    {{- end -}}
+{{- end -}}
+{{- $updated_config := merge $decap_config (dict "collections" $updated_collections) -}}
+{{  $updated_config | transform.Remarshal "yaml" }}

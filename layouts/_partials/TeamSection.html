@@ -1,0 +1,69 @@
+{{ $section := .section }}
+<section class="section section--team">
+
+  {{ if $section.title }}
+  <div class="container container--{{ $section.width }} align-center">
+    <h2 class="section-title">{{ $section.title }}</h2>
+  </div>
+  {{ end }}
+
+  <div class="container container--{{ $section.width }}">
+    <div class="grid grid-cols-auto-fit-sm grid-gap-xl">
+
+      {{ range $person_id := $section.team }}
+      {{ $person_data := index site.Data.team $person_id }}
+      <div class="cell">
+        <div class="card team-member">
+          {{ if $person_data.photo }}
+        {{ $alt_text := printf "Team member %s %s" $person_data.first_name $person_data.last_name }}
+        
+        {{/* partial "responsive/pictures-cloudinary.html" 
+           (dict 
+            "src" $person_data.photo
+            "alt" $alt_text 
+            "loading" "lazy"
+            "class" "responsive-img"
+                "containerWidth" (dict 
+                "desktop" 25
+                "tablet" 25
+                "mobile" 100
+                 )
+           ) 
+        */}}
+
+      {{ partial "responsive/pictures-cloudinary.html" (dict
+         "src"           $person_data.photo
+         "alt"           $alt_text
+         "loading"       "lazy"
+         "class"         "responsive-img"
+         "containerType" "wide"
+         "containerWidth" (dict
+           "xlarge"  33
+           "large"   33
+           "desktop" 33
+           "tablet"  50
+           "mobile"  100
+         )
+        ) 
+      }}
+
+
+          {{ end }}
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="h4 card-title">{{ $person_data.first_name }} {{ $person_data.last_name }}</h3>
+            </header>
+            {{ if $person_data.bio }}
+            <div class="card-body">
+              {{ partial "markdownify-block" $person_data.bio }}
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+
+</section>

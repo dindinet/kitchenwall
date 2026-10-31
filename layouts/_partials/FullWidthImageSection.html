@@ -1,0 +1,22 @@
+{{ $section := .section }}
+<div class="full-width">
+    <figure>
+
+        {{ partial "responsive/pictures-cloudinary.html" 
+        (dict 
+         "src" $section.image
+         "alt" $section.image_alt 
+         "loading" "lazy"
+         "class" "responsive-img"
+             "containerWidth" (dict 
+             "xlarge" 100
+             "large" 100
+             "desktop" 100
+             "tablet" 100
+             "mobile" 100
+              )
+        ) 
+      }}
+<figcaption>{{ $section.caption  }}</figcaption>
+</figure>
+  </div>

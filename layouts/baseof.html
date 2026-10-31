@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>    
+        <title>{{ if .Params.seo.title }}{{ $.Params.seo.title }}{{ else }}{{ print print $.Title " | " $.Site.Title }}{{ end }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google" content="notranslate" />
+        <meta name="description" content="{{ .Params.seo.description | default "" }}" />
+        <meta name="imgcache" content="{{ $.Site.Params.imgcache }}">
+        {{ if .Params.seo.robots }}
+        <meta name="robots" content="{{ delimit $.Params.seo.robots "," }}">
+        
+        {{ end }}
+        {{ range $meta := .Params.seo.extra }}
+          {{ $key_name := $meta.keyName | default "name" }}
+          {{ if $meta.relativeUrl }}
+            {{ if $.Site.Params.domain }}
+              {{ $domain := trim $.Site.Params.domain "/" }}
+              {{ $rel_url := $meta.value | relURL }}
+              {{ $full_url := print $domain $rel_url }}
+              <meta {{ $key_name }}="{{ $meta.name }}" content="{{ $full_url }}">
+            {{ end }}
+          {{ else }}
+            <meta {{ $key_name }}="{{ $meta.name }}" content="{{ $meta.value }}">
+          {{ end }}
+        {{ end }}
+ 
+        {{ $qcss := resources.Match "css/**.css" }}
+
+        {{ $seed := "cachebust" }}
+        {{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
+        {{ $random = (print $random ".css") }}
+        
+
+        {{ with $qcss | resources.Concat "css/wfg.css" }}
+          {{ if hugo.IsProduction }}
+            {{ with . | postCSS | minify | resources.PostProcess }}
+              {{ if $.Page.IsHome }}
+                <style>{{ .Content | safeCSS }}</style>
+              {{ else }}
+                <link rel="stylesheet" href="{{ replace .RelPermalink "css" $random }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+              {{ end }}
+            {{ end }}
+          {{ else }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}?{{ $random }}">
+          {{ end }}
+        {{ end }}
+
+
+
+        {{ if .Site.Params.favicon }}
+        <link rel="icon" href="{{ $.Site.Params.favicon | relURL }}">
+        {{ end }}
+        
+    </head>
+    <body>
+        
+        <div id="thesite-wrap" class="site">
+        
+          {{ partial "header.html" . }}
+        
+          <main id="content" class="site-content">
+            {{ block "content" . }}{{ end }}
+          </main>
+        
+          {{ partial "footer.html" . }}
+
+
+        
+        </div>
+
+    {{ $pageScripts := $.Store.Get "pageScripts" }}
+    {{ if $pageScripts }}
+
+          {{ $uniqueScripts := $pageScripts | uniq }}
+
+          {{ range $uniqueScripts }}
+              {{ $scriptPath := printf "js/pageSections/%s.js" . }}
+              {{ with resources.Get $scriptPath | minify }}
+                  <script src="{{ .RelPermalink }}" defer></script>
+              {{ else }}
+                  {{ warnf "Could not find script to link: %s" $scriptPath }}
+              {{ end }}
+          {{ end }}
+
+   {{ end }}
+   
+
+
+    </body> 
+</html>

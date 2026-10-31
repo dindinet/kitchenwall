@@ -1,0 +1,48 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    {{ if or .Site.Params.footer.has_nav .Site.Params.footer.has_social }}
+    <div class="footer-content">
+
+      {{ if $.Site.Params.footer.has_nav }}
+      <div class="footer-section">
+        <h3>Navigation</h3>
+      <ul  class="leading-tight">
+        {{ range $action := $.Site.Params.footer.nav_links }}
+        <li>
+          {{ $include_dict := dict "action" $action }}
+          {{ partial "action.html" $include_dict }}
+        </li>
+        {{ end }}
+      </ul>
+      </div>
+      {{ end }}
+
+      {{ if $.Site.Params.footer.has_social }}
+      <div class="footer-social flex-row icon-container justify-content-end">
+      <ul>
+        {{ range $action := $.Site.Params.footer.social_links }}
+        <li>
+          {{ $include_dict := dict "action" $action "type" "social-icon"}}
+          {{ partial "action.html" $include_dict }}
+        </li>
+        {{ end }}
+      </ul>
+      </div>
+      {{ end }}
+
+    </div>
+    {{ end }}
+
+    <div class="footer-copyright">
+      {{ if .Site.Params.footer.content }}
+        <span>{{ $.Site.Params.footer.content | safeHTML }}</span>
+      {{ end }}
+      {{ range $action := .Site.Params.footer.links }}
+        {{ $include_dict := dict "action" $action }}
+        {{ partial "action.html" $include_dict }}
+      {{ end }}
+    </div>
+
+  </div>
+</footer>

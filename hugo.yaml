@@ -1,0 +1,78 @@
+title: The one and only kitchenwall
+baseURL: /
+languageCode: 'en-uk'
+
+build:
+  writeStats: true
+
+params:
+  header:
+    has_nav: true
+    nav_links:
+      - label: Features
+        url: /features
+        style: link
+      - label: Blog
+        url: /blog
+        style: link
+      - label: About
+        url: /about
+        style: link
+      - label: Style Guide
+        url: /style-guide
+        style: link
+      - url: /contact
+        style: primary
+        label: Contact Us
+    title: KItchenWall
+  footer:
+    has_nav: true
+    nav_links:
+      - label: Contact Us
+        url: /contact
+        style: link
+      - label: Privacy and Terms
+        url: /terms
+        style: link
+    has_social: true
+    social_links:
+      - label: github
+        url: 'https://github.com/'
+        size: large
+        style: link
+        new_window: true
+      - label: linkedin
+        url: 'https://www.linkedin.com/'
+        size: large  
+        style: link
+        new_window: true
+    content: >-
+      &copy; Websites For Growth. All rights reserved. This Jamstack site was created with
+      <a href="https://www.websitesforgrowth.com/"
+      target="_blank" rel="noopener">websitesforgrowth</a>. Create yours <a
+      href="https://www.websitesforgrowth.com
+      target="_blank" rel="noopener">now</a>
+  domain: 'https://kitchenwall.dindi.net'
+  imgcache: 'https://dindi.net/cdn-cgi/image/format=auto/'
+taxonomies:
+  stub: stub
+disableKinds:
+  - RSS
+  - taxonomy
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+permalinks:
+  pages: "/:contentbasename/"
+  advanced: "/:contentbasename/"
+
+
+outputFormats:
+  decapConfig:
+    mediaType: "application/yaml"
+    baseName: "config"
+    path: "/"
+    isPlainText: true
+
