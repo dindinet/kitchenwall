@@ -10,7 +10,7 @@ sections:
   - arrowinout: in
     displaypager: true
     scrollby: 1
-    scrollername: wall
+    scrollername: blog
     scrollerwidth: wide
     arrowhovercolor: gold
     arrowposition: sides
@@ -65,7 +65,7 @@ sections:
   - arrowinout: out
     displaypager: true
     scrollby: 1
-    scrollername: wall2
+    scrollername: blog2
     scrollerwidth: wide
     arrowhovercolor: gold
     arrowposition: sides
@@ -120,7 +120,7 @@ sections:
   - arrowinout: in
     displaypager: true
     scrollby: 1
-    scrollername: wall3
+    scrollername: blog3
     scrollerwidth: wide
     arrowhovercolor: gold
     arrowposition: sides
@@ -175,7 +175,7 @@ sections:
   - arrowinout: in
     displaypager: true
     scrollby: 1
-    scrollername: wall4
+    scrollername: blog4
     scrollerwidth: wide
     arrowhovercolor: gold
     arrowposition: sides
