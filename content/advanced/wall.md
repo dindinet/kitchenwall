@@ -5,7 +5,7 @@ url: /
 sections:
   - type: FullWidthHeadingSection
     subtitleposition: above
-    subtitle: null
+    subtitle: " "
     title: Welcome to The Kitchen Wall
   - arrowinout: in
     displaypager: true
@@ -62,6 +62,7 @@ sections:
     arrowcolor: "#ffffff"
     type: SliderSection
     arrowsinout: out
+    nextvisible: 5
   - arrowinout: out
     displaypager: true
     scrollby: 1
@@ -106,7 +107,7 @@ sections:
         scrollerimagealt: null
       - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,f_auto/Picture_005_758x600?blokes
         scrollerimagealt: null
-      - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_004_765x600.jpg
+      - scrollerimage: https://res.cloudinary.com/machi/image/upload/f_auto/Picture_004_765x600
         scrollerimagealt: null
       - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_010_448x600.jpg
         scrollerimagealt: null
@@ -118,6 +119,7 @@ sections:
     arrowcolor: whitesmoke
     type: SliderSection
     arrowsinout: in
+    nextvisible: 5
   - arrowinout: in
     displaypager: true
     scrollby: 1
@@ -173,6 +175,7 @@ sections:
     arrowcolor: whitesmoke
     type: SliderSection
     arrowsinout: in
+    nextvisible: 5
   - arrowinout: in
     displaypager: true
     scrollby: 1
@@ -230,6 +233,7 @@ sections:
     arrowcolor: whitesmoke
     type: SliderSection
     arrowsinout: in
+    nextvisible: 5
 seo:
   title: The Kitchen Wall | Le mur de la cuisine | De keukenmuur | La parete della
     cucina | La pared de la cocina
