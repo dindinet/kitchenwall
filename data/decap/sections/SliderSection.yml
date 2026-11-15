@@ -24,7 +24,7 @@ fields:
         - { label: "Inside the slide", value: "in" }
         - { label: "Outside the slide", value: "out" }
   - {label: "Display pager", name: "displaypager", widget: "boolean", default: true}
-  - {label: Portion of next slide visible, name: nextvisible, widget: number, min: 5, max: 50, step: 5, default: 5}
+  - {label: Portion of next slide visible, name: nextvisible, widget: number, min: 5, max: 50, step: 5, default: 5, required: false}
   - name: scrollerimages
     label: Scroller Images
     widget: list
