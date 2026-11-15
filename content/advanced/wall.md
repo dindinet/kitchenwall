@@ -111,7 +111,7 @@ sections:
         scrollerimagealt: null
       - scrollerimage: https://res.cloudinary.com/machi/image/upload/w_1200,h_674,c_auto,g_face/Picture_010_448x600.jpg
         scrollerimagealt: null
-      - scrollerimage: https://res.cloudinary.com/machi/image/upload/v1793829451/picture_1267x713.jpg
+      - scrollerimage: https://res.cloudinary.com/machi/image/upload/f_auto/picture_1267x713
     arrowsposition: sides
     visibleslides: 1
     subtitle: ""
